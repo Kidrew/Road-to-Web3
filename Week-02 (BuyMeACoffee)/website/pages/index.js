@@ -191,28 +191,28 @@ export default function Home() {
 
       	<div className="p-10 bg-[#8A624A]">
         	<h1 className="pb-6 text-center text-2xl font-bold text-white">Choose the size of your coffee</h1>
-      		<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-        		<div class="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
-          			<div class="flex flex-wrap justify-center">
-            			<div class="w-6/12 sm:w-4/12 px-4">
-              				<img src="https://zupimages.net/up/22/19/63x9.png" alt="..." class="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
+      		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        		<div className="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
+          			<div className="flex flex-wrap justify-center">
+            			<div className="w-6/12 sm:w-4/12 px-4">
+              				<img src="https://zupimages.net/up/22/19/63x9.png" alt="..." className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
             			</div>
           			</div>
-          		<div class="px-6 py-4">
-        	<div class="text-center text-[#8A624A] font-bold text-xl mb-2">Little Coffee</div>
-				<p class="text-gray-700 text-base">
+          		<div className="px-6 py-4">
+        	<div className="text-center text-[#8A624A] font-bold text-xl mb-2">Little Coffee</div>
+				<p className="text-gray-700 text-base">
                 	Nothing like a little coffee to start the day. The fatigue of the previous night of learning will soon be a thing of the past!
               	</p>
             </div>
-            <div class="px-6 pb-4">
+            <div className="px-6 pb-4">
               	{currentAccount ? (
 					<div>
 						<form>
 							<div>
-								<label class="text-l font-bold text-[#8A624A] mb-2">Name</label>
+								<label className="text-l font-bold text-[#8A624A] mb-2">Name</label>
 								<br />
 								<input
-                        			class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        			className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 									id="name"
 									type="text"
 									placeholder="Bruce"
@@ -221,10 +221,10 @@ export default function Home() {
 							</div>
 							<br />
                     		<div>
-								<label class="text-l font-bold text-[#8A624A] mb-2">Send Killiane a message</label>
+								<label className="text-l font-bold text-[#8A624A] mb-2">Send Killiane a message</label>
 								<br />
 								<textarea
-                        			class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        			className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 									rows={3}
 									placeholder="Enjoy your little coffee!"
 									id="message"
@@ -246,28 +246,28 @@ export default function Home() {
 			</div>
 		</div>
           
-		<div class="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
-			<div class="flex flex-wrap justify-center">
-              	<div class="w-6/12 sm:w-4/12 px-4">
-                	<img src="https://zupimages.net/up/22/19/hyny.png" alt="..." class="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
+		<div className="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
+			<div className="flex flex-wrap justify-center">
+              	<div className="w-6/12 sm:w-4/12 px-4">
+                	<img src="https://zupimages.net/up/22/19/hyny.png" alt="..." className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
               	</div>
             </div>
-            <div class="px-6 py-4">
-              	<div class="text-center text-[#8A624A] font-bold text-xl mb-2">Medium Coffee</div>
-                	<p class="text-gray-700 text-base">
+            <div className="px-6 py-4">
+              	<div className="text-center text-[#8A624A] font-bold text-xl mb-2">Medium Coffee</div>
+                	<p className="text-gray-700 text-base">
                   		A good medium coffee to reboost is needed, there is nothing like it! A medium coffee and we're back at it!
                 	</p>
               	</div>
 
-              	<div class="px-6 pb-4">
+              	<div className="px-6 pb-4">
                 	{currentAccount ? (
 						<div>
 							<form>
 								<div>
-									<label class="text-l font-bold text-[#8A624A] mb-2">Name</label>
+									<label className="text-l font-bold text-[#8A624A] mb-2">Name</label>
 									<br />
 									<input
-										class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+										className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 										id="name"
 										type="text"
 										placeholder="Bruce"
@@ -276,10 +276,10 @@ export default function Home() {
 								</div>
 								<br />
                     			<div>
-									<label class="text-l font-bold text-[#8A624A] mb-2">Send Killiane a message</label>
+									<label className="text-l font-bold text-[#8A624A] mb-2">Send Killiane a message</label>
 									<br />
 									<textarea
-                        				class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        				className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 										rows={3}
 										placeholder="Enjoy your medium coffee!"
 										id="message"
@@ -301,27 +301,27 @@ export default function Home() {
               	</div>
             </div>
 
-            <div class="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
-              	<div class="flex flex-wrap justify-center">
-                	<div class="w-6/12 sm:w-4/12 px-4">
-                  		<img src="https://zupimages.net/up/22/19/d52q.png" alt="..." class="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
+            <div className="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
+              	<div className="flex flex-wrap justify-center">
+                	<div className="w-6/12 sm:w-4/12 px-4">
+                  		<img src="https://zupimages.net/up/22/19/d52q.png" alt="..." className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
                 	</div>
               	</div>
-            	<div class="px-6 py-4">
-              		<div class="text-center text-[#8A624A] font-bold text-xl mb-2">Large Coffee</div>
-                		<p class="text-gray-700 text-base">
+            	<div className="px-6 py-4">
+              		<div className="text-center text-[#8A624A] font-bold text-xl mb-2">Large Coffee</div>
+                		<p className="text-gray-700 text-base">
                   			The day was very hard, a last boost is needed to finish it! A large coffee to keep us going and boost our motivation is needed!
                 		</p>
               		</div>
-              		<div class="px-6 pb-4">
+              		<div className="px-6 pb-4">
                 		{currentAccount ? (
 							<div>
 						      	<form>
 							      	<div>
-								      	<label class="text-l font-bold text-[#8A624A] mb-2">Name</label>
+								      	<label className="text-l font-bold text-[#8A624A] mb-2">Name</label>
 								      	<br />
 								      	<input
-                        					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        					className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 									      	id="name"
 									      	type="text"
 									      	placeholder="Bruce"
@@ -330,10 +330,10 @@ export default function Home() {
 							      	</div>
 							      	<br />
                     				<div>
-								      	<label class="text-l font-bold mb-2 text-[#8A624A]">Send Killiane a message</label>
+								      	<label className="text-l font-bold mb-2 text-[#8A624A]">Send Killiane a message</label>
 								      	<br />
 								      	<textarea
-                        					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        					className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 									      	rows={3}
 									      	placeholder="Enjoy your large coffee!"
 									      	id="message"
