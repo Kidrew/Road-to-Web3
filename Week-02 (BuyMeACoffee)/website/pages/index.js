@@ -185,7 +185,10 @@ export default function Home() {
 				)}
         	</div>
         	<div className="w-full hidden md:block">
-          		<img src="https://zupimages.net/up/22/19/eme4.png" />
+          		<img
+				  src="https://zupimages.net/up/22/19/eme4.png"
+				  alt="..."
+				/>
           	</div>
       	</div>
 
@@ -195,7 +198,11 @@ export default function Home() {
         		<div className="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
           			<div className="flex flex-wrap justify-center">
             			<div className="w-6/12 sm:w-4/12 px-4">
-              				<img src="https://zupimages.net/up/22/19/63x9.png" alt="..." className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
+              				<img
+							  src="https://zupimages.net/up/22/19/63x9.png"
+							  alt="..."
+							  className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"
+							/>
             			</div>
           			</div>
           		<div className="px-6 py-4">
@@ -249,13 +256,17 @@ export default function Home() {
 		<div className="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
 			<div className="flex flex-wrap justify-center">
               	<div className="w-6/12 sm:w-4/12 px-4">
-                	<img src="https://zupimages.net/up/22/19/hyny.png" alt="..." className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
+                	<img
+						src="https://zupimages.net/up/22/19/hyny.png"
+						alt="..."
+						className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"
+					/>
               	</div>
             </div>
             <div className="px-6 py-4">
               	<div className="text-center text-[#8A624A] font-bold text-xl mb-2">Medium Coffee</div>
                 	<p className="text-gray-700 text-base text-justify">
-                  		A good medium coffee to reboost is needed, there is nothing like it! A medium coffee and we're back at it!
+                  		{"A good medium coffee to reboost is needed, there is nothing like it! A medium coffee and we're back at it!"}
                 	</p>
               	</div>
 
@@ -304,7 +315,11 @@ export default function Home() {
             <div className="rounded-lg overflow-hidden shadow-lg bg-[#d0bb94]">
               	<div className="flex flex-wrap justify-center">
                 	<div className="w-6/12 sm:w-4/12 px-4">
-                  		<img src="https://zupimages.net/up/22/19/d52q.png" alt="..." className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"/>
+                  		<img
+							src="https://zupimages.net/up/22/19/d52q.png"
+							alt="..."
+							className="shadow-lg rounded-full max-w-full h-auto align-middle border-none mt-6"
+						/>
                 	</div>
               	</div>
             	<div className="px-6 py-4">
@@ -368,7 +383,7 @@ export default function Home() {
 						key={idx}
 						className="xl:mx-72 text-center bg-[#d0bb94] border-solid border-2 border-[#ac7b58] rounded-lg p-5 m-5"
 					>
-						<p className="font-bold text-[#8A624A]">"{memo.message}"</p>
+						<p className="font-bold text-[#8A624A]">&quot;{memo.message}&quot;</p>
 						<p className="font-semibold text-gray-700">
 							From: {memo.name} at {memo.timestamp.toString()}
 					</p>
@@ -384,7 +399,7 @@ export default function Home() {
 				rel="noopener noreferrer"
           		className="font-semibold text-gray-700"
 			>
-				Created by @kmenand for Alchemy's Road to Web3 Week 02!
+				{"Created by @kmenand for Alchemy's Road to Web3 Week 02!"}
 			</a>
 		</footer>
 	</div>
