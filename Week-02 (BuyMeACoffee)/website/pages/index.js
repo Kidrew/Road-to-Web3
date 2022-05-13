@@ -164,7 +164,7 @@ export default function Home() {
       
       	<Head>
         	<title>Buy Killiane a Coffee!</title>
-			<meta name="description" content="Tipping site" />
+			<meta name="description" content="Buy Killiane a Coffee!" />
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
 
