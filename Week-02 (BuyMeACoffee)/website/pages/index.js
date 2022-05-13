@@ -168,7 +168,7 @@ export default function Home() {
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
 
-    	<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-center items-center h-full bg-[#8A624A] sm:px-12 md:px-64 lg:px-64 xl:px-64 p-10">
+    	<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-center items-center h-full bg-[#8A624A] sm:px-12 md:px-32 lg:px-64 xl:px-64 p-10">
         	<div className="w-full">
           		<h2 className="text-5xl font-bold text-white">
             		Buy Killiane a Coffee!
@@ -200,8 +200,8 @@ export default function Home() {
           			</div>
           		<div className="px-6 py-4">
         	<div className="text-center text-[#8A624A] font-bold text-xl mb-2">Little Coffee</div>
-				<p className="text-gray-700 text-base">
-                	Nothing like a little coffee to start the day. The fatigue of the previous night of learning will soon be a thing of the past!
+				<p className="text-gray-700 text-base text-justify">
+                	A little coffee to start the day! The fatigue of the previous night of learning will soon be a thing of the past!
               	</p>
             </div>
             <div className="px-6 pb-4">
@@ -254,7 +254,7 @@ export default function Home() {
             </div>
             <div className="px-6 py-4">
               	<div className="text-center text-[#8A624A] font-bold text-xl mb-2">Medium Coffee</div>
-                	<p className="text-gray-700 text-base">
+                	<p className="text-gray-700 text-base text-justify">
                   		A good medium coffee to reboost is needed, there is nothing like it! A medium coffee and we're back at it!
                 	</p>
               	</div>
@@ -309,7 +309,7 @@ export default function Home() {
               	</div>
             	<div className="px-6 py-4">
               		<div className="text-center text-[#8A624A] font-bold text-xl mb-2">Large Coffee</div>
-                		<p className="text-gray-700 text-base">
+                		<p className="text-gray-700 text-base text-justify">
                   			The day was very hard, a last boost is needed to finish it! A large coffee to keep us going and boost our motivation is needed!
                 		</p>
               		</div>
