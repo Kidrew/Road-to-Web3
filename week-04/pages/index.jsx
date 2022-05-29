@@ -2,12 +2,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import { NFTCard } from "../components/nftCard"
+import Pagination from "../components/Pagination";
 
 const Home = () => {
   const [wallet, setWalletAddress] = useState("");
   const [collection, setCollectionAddress] = useState("");
   const [NFTs, setNFTs] = useState([]);
   const [fetchForCollection, setFetchForCollection] = useState(false);
+
+    // Pagination
+    const [loading, setLoading] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [nftsPerPage] = useState(10);
 
   const fetchNFTs = async () => {
     let nfts;
@@ -49,6 +55,13 @@ const Home = () => {
     }
   }
 
+  // Get current nfts
+  const indexOfLastPost = currentPage * nftsPerPage
+  const indexOfFirstPost = indexOfLastPost - nftsPerPage
+  const currentNFTs = NFTs.slice(indexOfFirstPost, indexOfLastPost)
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber)
+
   return (
     <div className="flex flex-col items-center justify-center py-8 gasp-y-3">
       <div className="flex flex-col w-full justify-center items-center gap-y-2">
@@ -65,12 +78,22 @@ const Home = () => {
       </div>
       <div className="flex flex-wrap gap-y-12 mt-4 w-5/6 gap-x-2 justify-center">
         {
-          NFTs.length > 0 && NFTs.map(nft => {
+          NFTs.length > 0 && currentNFTs.map((nft) => {
             return (
-              <NFTCard nft={nft}></NFTCard>
+              <NFTCard nft={nft} loading={loading}></NFTCard>
             )
           })
         }
+      </div>
+      <div>
+        {NFTs.length > 0 && (
+          <Pagination
+            nftsPerPage={nftsPerPage}
+            totalNFTs={NFTs.length}
+            paginate={paginate}
+            currentPage={currentNFTs}
+          ></Pagination>
+        )}
       </div>
     </div>
   )
