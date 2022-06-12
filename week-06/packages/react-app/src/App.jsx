@@ -1,7 +1,7 @@
 import WalletConnectProvider from "@walletconnect/web3-provider";
 //import Torus from "@toruslabs/torus-embed"
 import WalletLink from "walletlink";
-import { Alert, Button, Col, Menu, Row, List, Divider } from "antd";
+import { Alert, Button, Col, Menu, Row, List, Divider, Input, Space } from "antd";
 import "antd/dist/antd.css";
 import React, { useCallback, useEffect, useState } from "react";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
@@ -173,6 +173,12 @@ function App(props) {
 
   const [injectedProvider, setInjectedProvider] = useState();
   const [address, setAddress] = useState();
+
+  // Challenge 2: Declaration of our const
+  const [stakeamount, setStakeamount] = useState("");
+  const onEtherChange = (event) => {
+    setStakeamount(event.target.value);
+  }
 
   const logoutOfWeb3Modal = async () => {
     await web3Modal.clearCachedProvider();
@@ -578,14 +584,18 @@ function App(props) {
             </div>
 
             <div style={{ padding: 8 }}>
-              <Button
-                type={balanceStaked ? "success" : "primary"}
-                onClick={() => {
-                  tx(writeContracts.Staker.stake({ value: ethers.utils.parseEther("0.5") }));
-                }}
-              >
-                🥩 Stake 0.5 ether!
-              </Button>
+              {/* Challenge 2: Adding an Input + Space from Ant Design */}
+              <Space>
+                <Input placeholder="Enter ETH Amount" onChange={onEtherChange}></Input>
+                <Button
+                  type={balanceStaked ? "success" : "primary"}
+                  onClick={() => {
+                    tx(writeContracts.Staker.stake({ value: ethers.utils.parseEther(stakeamount) }));
+                  }}
+                >
+                  🥩 Stake {stakeamount} ether!
+                </Button>
+              </Space>
             </div>
 
             {/*
